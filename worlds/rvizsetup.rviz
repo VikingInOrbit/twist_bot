@@ -9,7 +9,7 @@ Panels:
         - /RobotModel1/Mass Properties1
         - /Front1
         - /Marker1
-        - /Map1
+        - /cosmap1
       Splitter Ratio: 0.47156399488449097
     Tree Height: 550
   - Class: rviz_common/Selection
@@ -225,6 +225,7 @@ Visualization Manager:
         Front: true
         Grid: true
         Image: true
+        Map: true
         Marker: true
         RobotModel: true
         TF: true
@@ -251,6 +252,7 @@ Visualization Manager:
         Front: true
         Grid: true
         Image: true
+        Map: true
         Marker: true
         RobotModel: true
         TF: true
@@ -275,6 +277,7 @@ Visualization Manager:
         Front: true
         Grid: true
         Image: true
+        Map: true
         Marker: true
         RobotModel: true
         TF: true
@@ -313,7 +316,7 @@ Visualization Manager:
       Class: rviz_default_plugins/Map
       Color Scheme: map
       Draw Behind: false
-      Enabled: true
+      Enabled: false
       Name: Map
       Topic:
         Depth: 5
@@ -328,6 +331,27 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /map_updates
+      Use Timestamp: false
+      Value: false
+    - Alpha: 0.699999988079071
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: cosmap
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /global_costmap/costmap
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /global_costmap/costmap_updates
       Use Timestamp: false
       Value: true
   Enabled: true
@@ -375,7 +399,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: 0
+      Angle: -0.24500000476837158
       Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -385,7 +409,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 131.5302276611328
+      Scale: 74.61441040039062
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
       X: 0.869455873966217
@@ -431,8 +455,8 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1908
-  X: -28
-  Y: -45
+  X: -32
+  Y: -32
   depth_camera:
     collapsed: false
   depth_camera_raw:
